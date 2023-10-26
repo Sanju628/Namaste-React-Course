@@ -1,8 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import data from "./ResData.json";
-
-
 
 const ResturantCard = (props) => {
     const {items} = props;
@@ -43,7 +40,7 @@ const Body = () => {
     );
 }
 
-const Heading = () => {
+const Headers = () => {
     return (
         <div className="header">
             <div className="logoContainer">
@@ -67,7 +64,7 @@ const Heading = () => {
 const AppLayout = () => {
     return(
         <div className="App">
-            <Heading/>
+            <Headers/>
             <Body/>
         </div>
     );
